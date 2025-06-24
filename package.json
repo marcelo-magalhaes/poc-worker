@@ -1,0 +1,29 @@
+{
+  "name": "poc-worker",
+  "version": "1.0.0",
+  "description": "Shows a small implementation of a worker using typescript",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "npx nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelo-magalhaes/poc-worker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcelo-magalhaes/poc-worker/issues"
+  },
+  "homepage": "https://github.com/marcelo-magalhaes/poc-worker#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "nodemon": "^3.1.10",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
